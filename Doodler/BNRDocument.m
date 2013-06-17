@@ -19,6 +19,8 @@
     return self;
 }
 
+#pragma mark - NSDocument Overrides
+
 - (NSString *)windowNibName
 {
     // Override returning the nib file name of the document

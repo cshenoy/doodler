@@ -8,6 +8,12 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface BNRDocument : NSDocument
+@interface BNRDocument : NSDocument <NSTableViewDataSource>
+{
+    NSMutableArray *todoItems;
+    IBOutlet NSTableView *itemTableView;
+}
+
+- (IBAction)createNewItem:(id)sender;
 
 @end
